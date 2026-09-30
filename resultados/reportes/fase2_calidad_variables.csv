@@ -1,0 +1,21 @@
+variable,fuente,descripcion,faltantes_pct,fuera_de_rango,no_positivos,minimo,mediana,maximo
+pib_pc,BM,PIB per cápita (US$ constantes de 2015),3.7,0,0,233.032,5427.971,132595.483
+poblacion,BM,Población total (habitantes),0.0,0,0,9544.0,6619954.5,1450935791.0
+urbano_pct,BM,Población urbana (% del total),0.0,0,0,8.044,60.198,100.0
+industria_pct,BM,"Industria, valor agregado (% del PIB)",8.1,0,0,0.0,24.194,86.67
+renovable_pct,BM,Energía renovable (% del consumo final de energía),11.1,0,0,0.0,19.8,98.3
+electricidad_pct,BM,Acceso a la electricidad (% de la población),1.0,0,0,0.8,99.0,100.0
+co2_pc,BM,Emisiones de CO2 per cápita (t CO2e por habitante),2.4,0,50,0.0,2.309,53.599
+energia_pc_bm,BM,Uso de energía (kg de petróleo equivalente per cápita),28.0,0,0,9.727,1369.957,21557.475
+fosil_pct,BM,Energía de combustibles fósiles (% del total),30.6,6,0,-61.379,30.76,99.994
+carbon_elec_pct,BM,Electricidad generada con carbón (% del total),9.8,0,0,0.0,0.0,100.0
+baja_carbono_elec_pct,OWID,Electricidad baja en carbono: renovable + nuclear (% de la generación),2.6,0,0,0.0,27.152,100.0
+renovable_elec_pct,OWID,Electricidad renovable (% de la generación),2.6,0,0,0.0,19.456,100.0
+fosil_elec_pct,OWID,Electricidad fósil (% de la generación),2.6,0,0,0.0,72.848,100.0
+hidro_elec_pct,OWID,Electricidad hidroeléctrica (% de la generación),4.0,0,0,0.0,11.146,100.0
+carbon_elec_owid_pct,OWID,Electricidad con carbón según OWID (% de la generación),3.3,0,0,0.0,0.0,100.0
+intensidad_carbono_elec,OWID,Intensidad de carbono de la electricidad (gCO2/kWh),2.6,0,22,0.0,511.915,1306.72
+energia_pc,OWID,Consumo de energía primaria per cápita (kWh),3.9,0,48,0.0,12655.309,651836.562
+consumo_elec_pc,OWID,Generación eléctrica per cápita (kWh),2.5,0,2,0.0,2067.334,56048.727
+intensidad_energetica,OWID,Energía primaria por unidad de PIB (kWh/US$),27.0,0,0,0.078,1.114,10.141
+poblacion_owid,OWID,Población según OWID (habitantes),0.6,0,0,9566.0,6714057.0,1450935785.0

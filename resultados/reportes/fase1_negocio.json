@@ -1,0 +1,42 @@
+{
+  "problema": "Los organismos que financian o planifican la transición energética necesitan saber, cada año y con un criterio común, en qué etapa está cada país para priorizar recursos y cooperación.",
+  "interesados": [
+    "Ministerios de energía (en el Perú, el MINEM)",
+    "Bancos de desarrollo",
+    "Investigadores y organismos internacionales"
+  ],
+  "objetivo_negocio": "Disponer cada año de una clasificación comparable de los países según su avance en la transición energética.",
+  "objetivo_mineria_datos": "Preparar un conjunto país-año con la etapa de transición (inicial, intermedia, avanzada) como variable objetivo y predictores medidos el año anterior, apto para entrenar después un clasificador de tres clases.",
+  "criterio_exito_modelo_futuro": "Exactitud balanceada >= 0,75 en los años de prueba (2020-2024).",
+  "criterio_exito_negocio": "Cada clasificación debe poder explicarse con una regla pública.",
+  "regla_etiqueta": {
+    "b": "promedio de 3 años de la electricidad baja en carbono (% de la generación)",
+    "avanzada": "b >= 60 y acceso >= 90",
+    "intermedia": "b >= 30 (sin cumplir avanzada)",
+    "inicial": "b < 30",
+    "base": "ODS 7: electricidad limpia (7.2) y acceso universal (7.1)"
+  },
+  "requisitos": {
+    "R1": "Al menos 120 países en el conjunto final",
+    "R2": "b disponible en >= 85% de los años de cada país",
+    "R3": "Variables usadas con <= 25 % de faltantes",
+    "R4": "Sin valores nulos ni infinitos",
+    "R5": "Una fila por país y año, sin saltos entre años",
+    "R6": "Porcentajes dentro de [0, 100]",
+    "R7": "Cada etapa con >= 10 % de las filas",
+    "R8": "Ninguna columna derivada de la etiqueta; predictores del año anterior",
+    "R9": "La etiqueta se reproduce exactamente al recalcularla",
+    "R10": "Las tres etapas presentes en entrenamiento, validación y prueba"
+  },
+  "parametros": {
+    "min_paises": 120,
+    "cobertura_etiqueta": 0.85,
+    "max_faltantes_var": 25.0,
+    "max_faltantes_pais": 0.4,
+    "umbral_intermedia": 30.0,
+    "umbral_avanzada": 60.0,
+    "acceso_minimo": 90.0,
+    "min_clase": 10.0,
+    "tolerancia_fuentes": 5.0
+  }
+}

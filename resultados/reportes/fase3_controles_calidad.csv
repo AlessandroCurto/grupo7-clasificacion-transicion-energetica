@@ -1,0 +1,11 @@
+codigo,requisito,cumple,detalle
+R1,Países >= 120,CUMPLE,180 países
+R2,b disponible en >= 85 % de los años,CUMPLE,mínimo 88.0 % de los años
+R3,Variables con <= 25 % de faltantes,CUMPLE,máximo 11.1 % (renovable_pct)
+R4,Sin nulos ni infinitos,CUMPLE,0 y 0
+R5,"Una fila por país-año, sin saltos",CUMPLE,cumple
+R6,"Porcentajes en [0, 100]",CUMPLE,3 variables
+R7,Cada etapa >= 10 % de las filas,CUMPLE,mínimo 16.5 %
+R8,Sin componentes de la etiqueta; predictores del año anterior,CUMPLE,cumple
+R9,La etiqueta se reproduce al recalcularla,CUMPLE,100 % de coincidencia
+R10,Tres etapas en cada conjunto,CUMPLE,2160 / 720 / 900 filas

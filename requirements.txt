@@ -1,0 +1,6 @@
+# Librerías para ejecutar main.py y main.ipynb (Python 3.10 o superior)
+pandas>=2.2        # tablas de datos y series de tiempo
+numpy>=1.26        # cálculo numérico
+requests>=2.31     # descarga de datos (API del Banco Mundial y CSV de OWID)
+matplotlib>=3.8    # figuras
+notebook>=7.0      # Jupyter Notebook, solo para abrir main.ipynb

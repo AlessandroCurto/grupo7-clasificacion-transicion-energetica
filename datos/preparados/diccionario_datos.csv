@@ -1,0 +1,40 @@
+columna,tipo,papel,descripcion
+codigo_iso3,str,identificación,Código ISO de 3 letras
+nombre_pais,str,identificación,Nombre del país
+region,str,identificación,Región del Banco Mundial
+grupo_ingreso,str,identificación,Grupo de ingreso del Banco Mundial
+anio,int64,identificación,Año
+etapa,str,objetivo,"Etapa de transición (0 inicial, 1 intermedia, 2 avanzada)"
+etapa_num,int64,objetivo,"Etapa de transición (0 inicial, 1 intermedia, 2 avanzada)"
+pib_pc_log_ant,float64,predictor,"PIB per cápita (US$ constantes de 2015) (logaritmo), año anterior"
+poblacion_log_ant,float64,predictor,"Población total (habitantes) (logaritmo), año anterior"
+urbano_pct_ant,float64,predictor,"Población urbana (% del total), año anterior"
+industria_pct_ant,float64,predictor,"Industria, valor agregado (% del PIB), año anterior"
+renovable_pct_ant,float64,predictor,"Energía renovable (% del consumo final de energía), año anterior"
+co2_pc_log_ant,float64,predictor,"Emisiones de CO2 per cápita (t CO2e por habitante) (logaritmo), año anterior"
+energia_pc_log_ant,float64,predictor,"Consumo de energía primaria per cápita (kWh) (logaritmo), año anterior"
+consumo_elec_pc_log_ant,float64,predictor,"Generación eléctrica per cápita (kWh) (logaritmo), año anterior"
+var_pib_pc_pct_ant,float64,predictor,"Variación anual del PIB per cápita (%), año anterior"
+var_urbano_pp_ant,float64,predictor,"Cambio anual de la población urbana (p.p.), año anterior"
+var3_renovable_pp_ant,float64,predictor,"Cambio en 3 años de la energía renovable (p.p.), año anterior"
+anio_relativo,int64,predictor,Años transcurridos desde 2004
+region_africa_subsahariana,int64,predictor,Indicadora 0/1 de region africa subsahariana
+region_america_latina_caribe,int64,predictor,Indicadora 0/1 de region america latina caribe
+region_america_norte,int64,predictor,Indicadora 0/1 de region america norte
+region_asia_oriental_pacifico,int64,predictor,Indicadora 0/1 de region asia oriental pacifico
+region_asia_sur,int64,predictor,Indicadora 0/1 de region asia sur
+region_europa_asia_central,int64,predictor,Indicadora 0/1 de region europa asia central
+region_medio_oriente_norte_africa,int64,predictor,Indicadora 0/1 de region medio oriente norte africa
+ingreso_alto,int64,predictor,Indicadora 0/1 de ingreso alto
+ingreso_medio_alto,int64,predictor,Indicadora 0/1 de ingreso medio alto
+ingreso_medio_bajo,int64,predictor,Indicadora 0/1 de ingreso medio bajo
+ingreso_bajo,int64,predictor,Indicadora 0/1 de ingreso bajo
+bandera_imp_pib_pc,int64,bandera,1 si pib_pc fue imputada o corregida en el año t
+bandera_imp_poblacion,int64,bandera,1 si poblacion fue imputada o corregida en el año t
+bandera_imp_urbano_pct,int64,bandera,1 si urbano_pct fue imputada o corregida en el año t
+bandera_imp_industria_pct,int64,bandera,1 si industria_pct fue imputada o corregida en el año t
+bandera_imp_renovable_pct,int64,bandera,1 si renovable_pct fue imputada o corregida en el año t
+bandera_imp_co2_pc,int64,bandera,1 si co2_pc fue imputada o corregida en el año t
+bandera_imp_energia_pc,int64,bandera,1 si energia_pc fue imputada o corregida en el año t
+bandera_imp_consumo_elec_pc,int64,bandera,1 si consumo_elec_pc fue imputada o corregida en el año t
+conjunto,str,partición,"entrenamiento (2004-2015), validacion (2016-2019), prueba (2020-2024)"

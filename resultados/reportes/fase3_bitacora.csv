@@ -1,0 +1,11 @@
+paso,detalle
+selección,"6 países sin cobertura suficiente de b: CUW, FSM, MNE, MNP, SSD, TUV"
+selección,"variables con > 25 % de faltantes descartadas: energia_pc_bm, fosil_pct, intensidad_energetica"
+selección,"variables de la matriz eléctrica excluidas por fuga: renovable_elec_pct, fosil_elec_pct, hidro_elec_pct, carbon_elec_owid_pct, intensidad_carbono_elec, carbon_elec_pct"
+limpieza,39 valores imposibles convertidos en vacío
+limpieza,"15 países con > 40 % de años vacíos: ARM, ASM, DJI, ERI, GIB, GUM, NCL, NRU, PRK, PSE, SOM, SRB, VEN, VGB, VIR"
+imputación,823 valores por interpolación dentro del país
+imputación,299 valores por mediana del grupo de ingreso y año
+imputación,"5 países con huecos que no se pudieron llenar: CYM, FRO, LBR, TCA, YEM"
+atípicos,"Hampel en países retenidos: corregido 49, choque 24, etiqueta 18"
+transformación,720 filas de 2000-2003 sin historia retiradas
